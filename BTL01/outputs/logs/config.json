@@ -1,0 +1,46 @@
+{
+  "problem": "2D Gaussian density approximation with MLP",
+  "mu": [
+    0.0,
+    0.0
+  ],
+  "cov": [
+    [
+      0.3,
+      -0.5
+    ],
+    [
+      -0.5,
+      2.0
+    ]
+  ],
+  "domain": {
+    "x1": [
+      -2.0,
+      2.0
+    ],
+    "x2": [
+      -4.0,
+      4.0
+    ]
+  },
+  "baseline": {
+    "A": 1000,
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "activation": "tanh",
+    "optimizer": "Adam",
+    "lr": 0.005,
+    "batch_size": 64,
+    "epochs": 300,
+    "patience": 50,
+    "data_seeds": {
+      "train": 43,
+      "val": 44,
+      "test": 45
+    },
+    "seed": 42
+  }
+}
